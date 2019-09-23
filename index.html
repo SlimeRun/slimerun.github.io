@@ -2,24 +2,46 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
+	
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Slime Run</title>
+	
+    <title>Slime Run</title>
+	
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+	
+	<link rel = "stylesheet" type = "text/css" href = "reset.css">
+	
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+	
     <script src="UnityProgress.js"></script>
     <script src="UnityLoader.js"></script>
+	
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "FinalBuild_HTML.json", {onProgress: UnityProgress});
     </script>
   </head>
+  
   <body>
+  
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
+	  
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Slime Run</div>
       </div>
     </div>
+	
+	<div id = "AddedStuff">
+		<p id = "Controls">Controls:</p>
+		
+		<div id = "ControlsDiv">
+			<p>Jump: W (or Up Arrow)</p>
+			<p>Duck: S (or Down Arrow) </p>
+		</div>
+	</div>
+	
   </body>
 </html>
