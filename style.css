@@ -1,18 +1,19 @@
 body {
-	width: 100vw; /*1920*/
-	height: 100vh; /*969*/
+	width: 100vw; /*1920 px*/
+	height: 100vh; /*969 px*/
 	font-family: Helvetica, Verdana, Arial, sans-serif; 
 	background-color: RGB(160, 230, 184);
 	display: flex;
 	flex-flow: column-reverse nowrap;
+	font-size: calc(100vw * 14.457321018883462 / 1920 + 100vh * 4.742678981116537 / 969);
 }
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
 .webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
-.webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 8.02083333333333vw; height: 13.41589267285862vh;}
-.webgl-content .progress {height: 1.857585139318885vh; width: 7.34375vw; margin-top: 9.287925696594427vh;}
+.webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: calc(100vw * 115.95976233896107 / 1920 + 100vh * 38.04023766103887 / 969); height: calc(100vw * 97.8881110653568 / 1920 + 100vh * 32.11188893464323 / 969);}
+.webgl-content .progress {height: calc(100vw * 13.553738455203243 / 1920 + 100vh * 4.446261544796753 / 969); width: calc(100vw * 106.17095123242544 / 1920 + 100vh * 34.82904876757456 / 969); margin-top: calc(100vw * 67.76869227601622 / 1920 + 100vh * 22.23130772398376 / 969);}
 .webgl-content .progress .empty {background: url('progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
 .webgl-content .progress .full {background: url('progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
 
@@ -20,15 +21,15 @@ body {
 .webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
 
-.webgl-content .footer {margin-top: 0.5159958720330237vh; height: 3.92156862745098vh; line-height: 3.92156862745098vh; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 1vw;}
+.webgl-content .footer {margin-top: calc(100vw * 3.764927348667568 / 1920 + 100vh * 1.2350726513324313 / 969); height: calc(100vw * 28.613447849873516 / 1920 + 100vh * 9.386552150126477 / 969); line-height: calc(100vw * 28.613447849873516 / 1920 + 100vh * 9.386552150126477 / 969); font-family: Helvetica, Verdana, Arial, sans-serif; font-size: calc(100vw * 14.457321018883462 / 1920 + 100vh * 4.742678981116537 / 969);}
 .webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
-.webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 10.625vw; float: left;}
-.webgl-content .footer .title {margin-right: 0.5208333333333333vw; float: right;}
-.webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 1.979166666666667vw; float: right;}
+.webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: calc(100vw * 153.6090358256368 / 1920 + 100vh * 50.390964174363205 / 969); float: left;}
+.webgl-content .footer .title {margin-right: calc(100vw * 7.529854697335136 / 1920 + 100vh * 2.4701453026648625 / 969); float: right;}
+.webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: calc(100vw * 28.613447849873527 / 1920 + 100vh * 9.38655215012648 / 969); float: right;}
 
 #unityContainer {
-	width: 50vw; 
-	height: 61.91950464396285vh;
+	width: calc(100vw * 722.8660509441731 / 1920 + 100vh * 237.13394905582686 / 969);
+	height: calc(100vw * 451.79128184010824 / 1920 + 100vh * 148.20871815989176 / 969);
 }
 
 #AddedStuff {
@@ -43,8 +44,9 @@ body {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: calc(100vw * 28.914642037766924 / 1920 + 100vh * 9.485357962233074 / 969);
 }
 
 #Jump {
-	padding-right: 2vw;
+	padding-right: calc(100vw * 28.914642037766924 / 1920 + 100vh * 9.485357962233074 / 969);
 }
