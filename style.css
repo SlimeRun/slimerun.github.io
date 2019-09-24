@@ -37,6 +37,7 @@ body {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: calc(100vw * 28.914642037766924 / 1920 + 100vh * 9.485357962233074 / 969);
 }
 
 #ControlsDiv {
